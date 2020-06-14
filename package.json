@@ -1,0 +1,38 @@
+{
+  "name": "yess-ethiopia",
+  "version": "1.0.0",
+  "description": "YESS Ethiopia official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yisehak-awm/site.git"
+  },
+  "keywords": [
+    "yess",
+    "ethiopia"
+  ],
+  "author": "yisehak.aw@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yisehak-awm/site/issues"
+  },
+  "homepage": "https://github.com/yisehak-awm/site#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "husky": "^4.2.5",
+    "webpack": "^4.43.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "git fetch upstream && git rebase upstream/develop"
+    }
+  }
+}
